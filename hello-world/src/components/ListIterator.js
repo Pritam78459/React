@@ -20,3 +20,5 @@ class ListValue extends React.Component {
         );
     }
 }
+
+export default ListValue;
