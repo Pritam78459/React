@@ -9,7 +9,7 @@ const Dropdown = () => {
 
     return (
         <div>
-            <p style={{display: "inline-block"}}> Greetings : {greeting}</p>
+            <p style={{display: "inline-block",color:"red",fontSize:"60px"}}> Greetings : {greeting}</p>
             <select onChange={createText.bind(this)}>
                 <option value="Hi">Hi</option>
                 <option value="Hello">Hello</option>

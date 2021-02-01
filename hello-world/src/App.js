@@ -5,7 +5,7 @@ import Dropdown from './components/Dropdown'
 function App() {
   return (
     <div className="App">
-      <Dropdown/>
+      <Dropdown className="Dropdown" />
     </div>
   );
 }
