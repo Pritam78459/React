@@ -43,3 +43,5 @@ function ThemeProvider(children){
         </ThemeContext.Provider>
     )
 }
+
+export {ThemeProvider, ThemeContext}
