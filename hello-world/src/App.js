@@ -5,24 +5,18 @@ import ListValue from './components/ListIterator'
 import ErrorBoundary from './components/ErrorBoundry'
 import {ThemeContext} from './components/Themes'
 import React from 'react';
+import ShoppingList from './components/ReactUseState';
 
 
 
 function App() {
 
-  const {theme, toggle, dark} = React.useContext(ThemeContext)
 
   return (
-    <div className="App" style = {{backgroundColor:theme.backgroundColor, color: theme.color}} >
+    <div className="App" >
       <ErrorBoundary>
-      <Dropdown className="Dropdown" />
-      <ListValue/>
+        <ShoppingList/>
       </ErrorBoundary>
-      <button type="button" onClick ={toggle}
-      style= {{backgroundColor:theme.backgroundColor, color: theme.color}}
-      >
-          Click Theme to toggle to {!dark ? 'dark': 'light'} theme
-      </button>
     </div>
   );
 }
